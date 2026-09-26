@@ -29,7 +29,19 @@ details ul{padding-left:18px}
 .cta a{display:block;max-width:508px;margin:0 auto;background:#06C755;color:#fff;font-weight:700;font-size:17px;text-decoration:none;border-radius:999px;padding:14px 10px}
 .cta small{display:block;font-size:11px;color:#7A6466;margin-top:4px}
 </style>
-<!-- Meta Pixel: ピクセルIDが決まったらここに入れる -->
+<!-- Meta Pixel -->
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init','3729278627220928');fbq('track','PageView');
+document.addEventListener('click',function(ev){var a=ev.target.closest&&ev.target.closest('a.line-link');
+if(a)fbq('track','Lead',{content_name:'LINE登録',content_category:'A'});});
+</script>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=3729278627220928&ev=PageView&noscript=1"></noscript>
+<!-- End Meta Pixel -->
 </head>
 <body>
 <main>
